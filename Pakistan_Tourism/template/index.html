@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% comment %} {% load static %} {% endcomment %}
+  <head>
+  <style>
+.nav{
+background-color: rgb(34,179,193);
+}
+.white-text {
+color: #fff!important;
+}
+footer.page-footer {
+  bottom: 0;
+  color: #fff;
+}
+.footer-copyright {
+  overflow: hidden;
+  background-color: rgba(0,0,0,.2);
+  color: rgba(255,255,255,.6);
+} 
+.time-font {
+    font-size: 15px;
+}
+*, ::after, ::before {
+box-sizing: border-box;
+}
+.text-center {
+text-align: center!important;
+}
+.my-2 {
+margin-top: 0.5rem!important;
+}
+.mb-2, .my-2 {
+margin-bottom: 0.5rem!important;
+}
+h6 {
+font-size: 1rem;
+line-height: 1.2;
+margin-top: 0;
+margin-block-start: 2.33em;
+margin-block-end: 2.33em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+display: block;
+}
+.row {
+display: flex;
+
+flex-wrap: wrap;
+margin-right: -15px;
+margin-left: -15px;
+}
+#type {
+height: 300px;
+width: 100%;
+background-image: url(../static/assets/images/type.jpg);
+}
+.view {
+position: relative;
+overflow: hidden;
+cursor: default;
+}
+.view .mask {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+overflow: hidden;
+width: 100%;
+height: 100%;
+background-attachment: fixed;
+}
+.rgba-stylish-strong {
+background-color: rgba(62,69,81,.7);
+}
+.font-italic {
+font-style: italic!important;
+}
+.font-weight-bold {
+font-weight: 700!important;
+}
+.rounded-circle {
+border-radius: 50%!important;
+}
+.border-white {
+border-color: #fff!important;
+}
+.border {
+border: 1px solid #dee2e6!important;
+}  
+.view img, .view video {
+    position: relative;
+    display: block;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
+.mb-2, .my-2 {
+    margin-bottom: .5rem!important;
+}
+.mt-2, .my-2 {
+    margin-top: .5rem!important;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.font-weight{
+  font-weight: 500!important;
+}
+    </style> 
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+    <link href="../static/assets/images/logo.jpg" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Travelo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../static/assets/css/animate.css">
+    <link rel="stylesheet" href="../static/assets/css/templatemo-woox-travel.css">
+    <link rel="stylesheet" href="../static/assets/css/owl.css">
+    <link rel="stylesheet" href="../static/assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
+<!--
+
+TemplateMo 580 Woox Travel
+
+https://templatemo.com/tm-580-woox-travel
+
+-->
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <nav class="navbar navbar-expand-lg navbar-dark nav pt-1 pb-0 px-5" aria-label="Offcanvas navbar large">
+    <div class="container-fluid">
+      <div id="header">
+        <img id="logo" src="../static/assets/images/logoo.png" style="height: 75px; margin-left: -10px; margin-right: 10px; padding-top: 6px; padding-bottom: 6px;">
+      </div>
+      <a class="navbar-brand mr-5 font-weight-bold pe-3" href="/">TRAVELO PAK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">TRAVELO PAK</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+      <div class="offcanvas-body" id="basicExampleNav">
+      <ul class="navbar-nav justify-content-end flex-grow-1 ps-3" style="padding-right: 70px;">
+        <li class="nav-item">
+          <a class="nav-link active pe-3 font-weight" class="active" aria-current="page"  href="/tour_destination">Destinations</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link active pe-3 font-weight" class="active" aria-current="page"  href="/hotels_view">Hotels </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active pe-3 font-weight" class="active" aria-current="page"  href="/season">Directions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active pe-3 font-weight" aria-current="page" href="/companies">Companies</a>
+      </li>
+    </ul>  
+     
+      <div class="search h-100 mr-3">
+        <form action="{% url 'searching' %}" method="get" class="d-flex">
+          {% csrf_token %}
+            <input class="form-control" type="text" name="query" placeholder="Search" aria-label="Search" button class="btn" type="submit"></button>	
+        </form>
+          </div>
+    
+        <ul class="navbar-nav justify-content-end flex-grow-1 ps-1">
+        
+         {% if user.is_authenticated %}
+         <li class="nav-item">
+          <a class="nav-link active font-weight" aria-current="page" href=""><span class="fa fa-user"></span>&nbsp{{user.first_name}}</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active font-weight" aria-current="page" href="/logout"><span class="fa fa-sign-out-alt"></span>&nbspLogout</a>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link active ps-1 font-weight" aria-current="page" href="/login"><span class="fa fa-user"></span> Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ps-1 font-weight" aria-current="page" href="/register"> <span class="fa fa-user"></span> Register</a>
+        </li>
+        {% endif %} 
+
+      </ul>   
+    </div>
+  </div>
+</div>
+</nav>
+  <!-- ***** Header Area End ***** -->
+
+  
+  <!-- ***** Main Banner Area Start ***** -->
+  <section id="section-1">
+    <div class="content-slider">
+      <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+      <input type="radio" id="banner2" class="sec-1-input" name="banner">
+      <input type="radio" id="banner3" class="sec-1-input" name="banner">
+      <input type="radio" id="banner4" class="sec-1-input" name="banner">
+      <div class="slider">
+        <div id="top-banner-1" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2>Take a Glimpse Into The Beautiful City Of:</h2>
+              <h1>Islamabad</h1>
+              <div class="border-button"><a href="/destinations/1">Explore More</a></div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-info">
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-users"></i>
+                        <h4><span>Population:</span><br>1,015,000.00</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-globe"></i>
+                        <h4><span>Territory:</span><br>220 km<em>2</em></h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-home"></i>
+                        <h4><span>No. of Attractions:</span><br>32</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-hotel"></i>
+                        <h4><span>Number of Hotels:</span><br>48</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="top-banner-2" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2>Take a Glimpse Into The Beautiful City Of:</h2>
+              <h1>Karachi</h1>
+              <div class="border-button"><a href="/destinations/3">Explore More</a></div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-info">
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-user"></i>
+                        <h4><span>Population:</span><br>14,910,000.00</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-globe"></i>
+                        <h4><span>Territory:</span><br>3780 KM<em>2</em></h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-home"></i>
+                        <h4><span>No. of Attractions:</span><br>29</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-hotel"></i>
+                        <h4><span>Number of Hotels:</span><br>28</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="top-banner-3" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2>Take a Glimpse Into The Beautiful Country Of:</h2>
+              <h1>Lahore</h1>
+              <div class="border-button"><a href="/destinations/2">Explore More</a></div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-info">
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-user"></i>
+                        <h4><span>Population:</span><br>11,130,000.00</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-globe"></i>
+                        <h4><span>Territory:</span><br>1772 KM<em>2</em></h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-home"></i>
+                        <h4><span>No. of Attractions:</span><br>44</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-hotel"></i>
+                        <h4><span>Number of Hotels:</span><br>56</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="top-banner-4" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2>Take a Glimpse Into The Beautiful Country Of:</h2>
+              <h1>Faislabad</h1>
+              <div class="border-button"><a href="/destinations/4">Explore More</a></div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-info">
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-user"></i>
+                        <h4><span>Population:</span><br>3,203,846.00</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-globe"></i>
+                        <h4><span>Territory:</span><br>1300 KM<em>2</em></h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-home"></i>
+                        <h4><span>No. of Attractions:</span><br>15</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-hotel"></i>
+                        <h4><span>Number of Hotels:</span><br>21</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="controls">
+          <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text">1</span></label>
+          <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text">2</span></label>
+          <label for="banner3"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text">3</span></label>
+          <label for="banner4"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text">4</span></label>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <div class="container-fluid pe-5">
+  <h2 style="padding-top: 61px;;">Visit One Of Our Famous Cities</h2>
+  <p class="grey-text pt-3" >Pakistan Tourist Community is a source of information about tourist and tourism in Pakistan. Our goal is to help you plan your trips. Adventure is an exciting experience that is bold, risky and undertaking. It may be activities with potential for physical danger like traveling, exploring, mountain climbing, river rafting etc.</p>
+  <center><div class="border-button pt-4"><a href="/destinations">Explore Cities</a></div></center>
+  </div>
+
+<hr class="my-5">
+<!--Section: Type-->
+        <!--Mask-->
+        <div id="type" class="view">
+          <div class="mask rgba-stylish-strong">
+            
+      <div class="text-center my-2" style="color:white;">
+                  <!-- Heading -->
+                  <h6 class="mb-2 font-weight-bold font-italic" style="color:white;">Find a Tour by</h6>
+                  <h2 class="font-weight-bold" style="color:white;">TOUR TYPE</h2>
+
+                  <!-- Grid row-->
+            <div class="row" style="margin-left: 150px;" >
+
+                <!-- Grid column-->
+                <div class="col-lg-2 col-md-12 ml-5 mt-2">
+                    <div class="border border-white rounded-circle">
+                      <a href="/forts"><img src="../static/assets/images/fort.png" style="width: 60px; height: 70px;" class="mx-auto my-2" alt="">
+                      <h4 class="my-4 font-weight-bold" style="color: #007bff; font-family: Roboto,sans-serif">FORTS</h4></a>
+                    </div> 
+                </div>
+                <!-- /Grid column-->
+
+                <!-- Grid column-->
+                <div class="col-lg-2 col-md-12 ml-4 mt-2">
+                  <div class="border border-white rounded-circle">
+                    <a href="/hill"><img src="../static/assets/images/hill.png" style="width: 60px; height: 70px;" class="mx-auto my-3" alt="">
+                    <h5 class="my-4 font-weight-bold" style="color: #007bff; font-family: Roboto,sans-serif">HILL STATION</h5></a>
+                  </div> 
+              </div>
+              <!-- /Grid column-->
+
+              <!-- Grid column-->
+              <div class="col-lg-2 col-md-12 ml-4 mt-2">
+                <div class="border border-white rounded-circle">
+                  <a href="/mountains"><img src="../static/assets/images/moun.png" style="width: 60px; height: 70px;" class="mx-auto my-2" alt="">
+                  <h4 class="my-4 font-weight-bold" style="color: #007bff; font-family: Roboto,sans-serif">Mountains</h4></a>
+                </div> 
+            </div>
+            <!-- /Grid column-->
+
+            <!-- Grid column-->
+            <div class="col-lg-2 col-md-12 ml-4 mt-2">
+              <div class="border border-white rounded-circle">
+                <a href="/valleys"><img src="../static/assets/images/vall.png" style="width: 60px; height: 70px;"  class="mx-auto my-2" alt="">
+                <h4 class="my-4 font-weight-bold" style="color: #007bff; font-family: Roboto,sans-serif">VALLEYS</h4></a>
+              </div> 
+          </div>
+          <!-- /Grid column-->
+
+          <!-- Grid column-->
+          <div class="col-lg-2 col-md-12 ml-4 mt-2">
+            <div class="border border-white rounded-circle">
+              <a href="/walking"><img src="../static/assets/images/walk.png" style="width: 60px; height: 70px;" class="mx-auto my-2" alt="">
+              <h4 class="my-4 font-weight-bold" style="color: #007bff; font-family: Roboto,sans-serif">WALKING</h4></a>
+            </div> 
+        </div>
+        <!-- /Grid column-->
+
+              </div>
+              <!-- /Grid row-->
+                </div>
+                  </div>
+                  <!-- /Grid row-->
+          </div>
+      </div>
+        <!--/Section: Type-->
+
+        <hr class="my-5">
+
+  <!-- <footer> -->
+    <footer class="page-footer indigo center-on-small-only">
+      <div style="background-color: #004789;">
+        <div class="container">
+            <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 style="font-weight: 300; font-size: 1rem; color: white;"class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div  class="ps-5  col-md-6 col-lg-7 text-center text-md-right">
+
+            <!-- Facebook -->
+            <a  class="ps-3 fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="ps-4 tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+``            <!-- Google +-->
+            <a class="ps-3 gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="ps-3 li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ps-3 ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+     <!-- Footer Links -->
+
+     <div style="background-color:#22b3c1;" class="container text-center text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class=" text-start col-md-2 col-lg-3 col-sm-1 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold white-text" style="font-family: Arial;">Online Guider For Pak Tourism</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-2 d-inline-block mx-auto" style="width: 60px;">
+          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        
+
+        <!-- Grid column -->
+        <div class="text-start col-md-2 col-lg-3 col-sm-1 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold white-text" style="font-family: Arial;">Useful links</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-2 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a  href="#!">Your Account</a>
+          </p>
+          <p>
+            <a href="#!">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!">Shipping Rates</a>
+          </p>
+          <p>
+            <a href="#!">Help</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="text-start col-md-2 col-lg-3 col-sm-1 mx-2 mb-4">
+
+          <!-- Links -->
+          <h6 class="white-text text-uppercase font-weight-bold" style="font-family: Arial;">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-2 d-inline-block mx-auto" style="width: 60px;">
+          <p >
+            <i class="fas fa-home mr-3 pe-2"></i> UAF, Faislabad, Pakistan</p>
+          <p>
+            <i class=" fas fa-envelope mr-3 pe-2"></i> creative@gmail.com</p>
+          <p>
+            <i class="fas fa-phone mr-3 pe-2"></i> + 92 301 2345678 </p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <div  class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a style="color: white;"href="Pakistan Tourist Community"> PKtouristcommunity.com</a>
+    </div>
+  </footer>
+<!-- </footer> -->
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
+  
+
+  <script src="../static/assets/js/isotope.min.js"></script>
+  <script src="../static/assets/js/owl-carousel.js"></script>
+  <script src="../static/assets/js/wow.js"></script>
+  <script src="../static/assets/js/tabs.js"></script>
+  <script src="../static/assets/js/popup.js"></script>
+  <script src="../static/assets/js/custom.js"></script>
+
+  <script>
+    function bannerSwitcher() {
+      next = $('.sec-1-input').filter(':checked').next('.sec-1-input');
+      if (next.length) next.prop('checked', true);
+      else $('.sec-1-input').first().prop('checked', true);
+    }
+
+    var bannerTimer = setInterval(bannerSwitcher, 5000);
+
+    $('nav .controls label').click(function() {
+      clearInterval(bannerTimer);
+      bannerTimer = setInterval(bannerSwitcher, 5000)
+    });
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  </body>
+
+</html>

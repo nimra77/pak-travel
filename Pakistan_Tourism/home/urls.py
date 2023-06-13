@@ -1,0 +1,42 @@
+from django.contrib import admin
+from django.urls import path,include
+from home import views
+
+urlpatterns =[
+    path('', views.index, name="index"),
+    path('about', views.about, name="about"),
+    path('register', views.register, name="register"),
+    path('login', views.login, name="login"),
+    path('logout', views.logout, name="logout"),
+    path('destinations', views.destinations, name="destinations"),
+    path('destinations/<str:id>', views.destination_detail, name='destination_detail'),
+    path('attractions/<str:id>', views.attractions, name='attractions'),
+    path('attractions_detail/<str:id>', views.attractions_detail, name='attractions_detail'),
+    path('submit_review/<int:attraction_id>/', views.submit_review, name='submit_review'),
+    path('tours_review/<int:tour_companies_id>/', views.tours_review, name='tours_review'),
+    path('companies', views.companies, name='companies'),
+    path('Tour_packages/<str:id>', views.tour_packages, name='tour_packages'),
+    path('hotels/<str:id>', views.hotels, name='hotels'),
+    path('hotels_view', views.hotels_view, name='hotels'),
+    path('hotel1', views.hotel1, name='hotel1'),
+    path('hotel2', views.hotel2, name='hotel2'),
+    path('hotel3', views.hotel3, name='hotel3'),
+    path('hotel4', views.hotel4, name='hotel4'),
+    path('search', views.search, name='search'),
+    path('province/<str:province>', views.province, name='province'),
+    path('forts', views.forts, name='forts'),
+    path('hill', views.hill, name='hill'),
+    path('mountains', views.mountains, name='mountains'),
+    path('valleys', views.valleys, name='valleys'),
+    path('walking', views.walking, name='walking'),
+    path('tour_destination', views.tour_destination, name='tour_destination'),
+    path('Gilgit Baltistan', views.gilgit, name='Gilgit'),
+    path('Punjab', views.punjab, name='punjab'),
+    path('Sindh', views.sindh, name='sindh'),
+    path('KPK', views.kpk, name='kpk'),
+    path('Khyber Pakhtunkhwa', views.kpk, name='kpk'),
+    path('Balochistan', views.balochistan, name='balochistan'),
+    path('season', views.season, name='season'),
+    path('view/<str:id>', views.view, name='view'),
+    path('searching', views.searching, name='searching')
+]
